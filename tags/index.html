@@ -19,7 +19,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Archives: 2016/2 | oliver&#39;s leisure times</title>
+    <title>Tag:   | oliver&#39;s leisure times</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -83,7 +83,7 @@
         
     $(function() {
         // page-id...
-        var pageId = "archives/2016/02/index.html";
+        var pageId = "tags/index.html";
         pageId = pageId.substr(0, pageId.indexOf("/"));
         if(pageId === "") pageId = "index";
         
@@ -95,40 +95,37 @@
 
 <div class="container archive-body">
     <div class="row">
-        <div class="col-xs-2 well">
-            <h2 class="archive-icon">2016/2</h2>
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li></ul>
+        <div class="col-xs-3 well">
+            <div class="archive-title" >
+                <h2 class="tag-icon">标签</h2>
+                
+            </div>
         </div>
         
-        <div class="col-xs-10">
-            
-            <article class="post">
-                <div class="jumbotron">
-                    <h1><a href="/2016/02/18/hello-world/" title="Hello World">Hello World</a></h1>
-
-                    
-                        <p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
-                    
-
-                    <p class="say-title">
-                        —— <img src="/images/avatar.gif" class="img-circle index-post-avatar" />
-                        <a href="http://shengyu.me" target="_blank" title="Oliver">Oliver</a>
-                        于2016-02-18自豪地唠嗑
-                    </p>
-                </div>
-            </article>
-            
-            
-            
+        <div class="all-list-box">
         </div>
     </div>
 </div>
-
+    
 <script>
 $(function() {
-    $(".archive-list-count").addClass("badge");
+    var box = $('.all-list-box');
+    var first = $('.archive-title a:first-of-type');
+    var list = $('.archive-title a');
+    
+    box.load(first.attr('data-src').toString() + ' #tag-list-body');
+    first.addClass('currentTag');
+    list.each(function() {
+        $(this).click(function() {
+            var listSrc = $(this).attr('data-src').toString() + ' #tag-list-body';
+            box.load(listSrc);
+            list.removeClass('currentTag');
+            $(this).addClass('currentTag');
+        });
+    });
 });
 </script>
+
 
     <footer id="footer">
     <div id="bottom-tip">
