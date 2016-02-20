@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Category:   | oliver&#39;s leisure times</title>
+    <title>Category: 日记 | oliver&#39;s leisure times</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -81,7 +81,7 @@
         
     $(function() {
         // page-id...
-        var pageId = "categories/index.html";
+        var pageId = "categories/日记/index.html";
         pageId = pageId.substr(0, pageId.indexOf("/"));
         if(pageId === "") pageId = "index";
         
@@ -90,43 +90,43 @@
     </script>
 
     
-
 <div class="container archive-body">
     <div class="row">
         <div class="col-xs-3 well">
-            <div class="category-title" >
-                <h2 class="category-icon">分类</h2>
-                
-                <a data-src="/categories/日记/" href="#日记" title="日记">日记<sup>1</sup></a>
-                
+            <div class="archive-title" >
+                <h2 class="tag-icon">日记</h2>
+                <div>
+                    <a href="/categories"><< 返回标签列表</a> 
+                </div>
             </div>
         </div>
         
-        <div class="all-list-box">
+        <div class="col-xs-9" id="category-list-body">
+            
+            <article class="post">
+                <div class="jumbotron">
+                    <h1><a href="/2016/02/20/同学聚会/" title="同学聚会">同学聚会</a></h1>
+
+                    
+                        <p>周五晚上抵沪，同学租住在汤臣二期，刚好有空房间，我便蹭住两晚。想起10年10月底初次来上海，扛着一袋被子和一大箱子衣物，坐地铁到北新泾，表哥来接我，张江德国中心，那是我人生第一份工作。而后12年7月底从浦东机场启程赴美，人生第一次坐飞机。今天又回到了这里，感觉人生就像是一个个循环</p>
+                    
+
+                    <p class="say-title">
+                        —— <img src="/images/avatar.gif" class="img-circle index-post-avatar" />
+                        <a href="http://shengyu.me" target="_blank" title="Oliver">Oliver</a>
+                        于2016-02-20自豪地唠嗑
+                    </p>
+                </div>
+            </article>
+            
+            
+            
         </div>
     </div>
+        
+    <div class="col-xs-19 all-list-box">
+    </div>
 </div>
-    
-<script>
-$(function() {
-    var box = $('.all-list-box');
-    var first = $('.category-title a:first-of-type');
-    var list = $('.category-title a');
-    
-    box.load(first.attr('data-src').toString() + ' #category-list-body');
-    first.addClass('currentTag');
-    list.each(function() {
-        $(this).click(function() {
-            var listSrc = $(this).attr('data-src').toString() + ' #category-list-body';
-            box.load(listSrc);
-            list.removeClass('currentTag');
-            $(this).addClass('currentTag');
-        });
-    });
-});
-</script>
-
-
     <footer id="footer">
     <div id="bottom-tip">
         oliver&#39;s leisure times
