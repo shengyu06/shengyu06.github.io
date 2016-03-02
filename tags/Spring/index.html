@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Archives | oliver&#39;s leisure times</title>
+    <title>Tag: Spring | oliver&#39;s leisure times</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -81,7 +81,7 @@
         
     $(function() {
         // page-id...
-        var pageId = "archives/index.html";
+        var pageId = "tags/Spring/index.html";
         pageId = pageId.substr(0, pageId.indexOf("/"));
         if(pageId === "") pageId = "index";
         
@@ -90,15 +90,18 @@
     </script>
 
     
-
 <div class="container archive-body">
     <div class="row">
-        <div class="col-xs-2 well">
-            <h2 class="archive-icon">归档</h2>
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">4</span></li></ul>
+        <div class="col-xs-3 well">
+            <div class="archive-title" >
+                <h2 class="tag-icon">Spring</h2>
+                <div>
+                    <a href="/tags"><< 返回标签列表</a> 
+                </div>
+            </div>
         </div>
         
-        <div class="col-xs-10">
+        <div class="col-xs-9" id="tag-list-body">
             
             <article class="post">
                 <div class="jumbotron">
@@ -117,85 +120,14 @@
                 </div>
             </article>
             
-            <article class="post">
-                <div class="jumbotron">
-                    <h1><a href="/2016/02/27/家族轶事/" title="家族轶事">家族轶事</a></h1>
-
-                    
-                        <p>缘起大年初二，我初次来到东阳上塘，主要是陪着奶奶来祭祖。巧遇表哥一家，便与他们同去外太公和大外太婆的墓。外太公的墓前题词“虎踞龙盘”，上面是他的名讳与生卒年，字体都是镂空的，若不细看会以为是无字碑。奶奶亲切地叫着“爸爸，我来看你了”，奶奶已经85岁了，而她的这一声爸爸，我能听出来</p>
-                    
-
-                    <p class="say-title">
-                        —— <img src="/images/avatar.gif" class="img-circle index-post-avatar" />
-                        <a href="http://shengyu.me" target="_blank" title="Oliver">Oliver</a>
-                        于2016-02-27自豪地唠嗑
-                    </p>
-                </div>
-            </article>
-            
-            <article class="post">
-                <div class="jumbotron">
-                    <h1><a href="/2016/02/24/Preparing-for-interview/" title="Preparing for interview">Preparing for interview</a></h1>
-
-                    
-                        <p>Cloud -&amp;gt; ?
-cloud teamThey just disband the whole Cloud Team, this announcement comes from nowhere and stunned everyone, now each have to </p>
-                    
-
-                    <p class="say-title">
-                        —— <img src="/images/avatar.gif" class="img-circle index-post-avatar" />
-                        <a href="http://shengyu.me" target="_blank" title="Oliver">Oliver</a>
-                        于2016-02-24自豪地以 <a class="article-tag-link" href="/tags/work/">work</a> 唠嗑
-                    </p>
-                </div>
-            </article>
-            
-            <article class="post">
-                <div class="jumbotron">
-                    <h1><a href="/2016/02/20/同学聚会/" title="同学聚会">同学聚会</a></h1>
-
-                    
-                        <p>周五晚上抵沪，同学租住在汤臣二期，刚好有空房间，我便蹭住两晚。想起10年10月底初次来上海，扛着一袋被子和一大箱子衣物，坐地铁到北新泾，表哥来接我，张江德国中心，那是我人生第一份工作。而后12年7月底从浦东机场启程赴美，人生第一次坐飞机.今天又回到了这里，感觉人生就像是一个个循环</p>
-                    
-
-                    <p class="say-title">
-                        —— <img src="/images/avatar.gif" class="img-circle index-post-avatar" />
-                        <a href="http://shengyu.me" target="_blank" title="Oliver">Oliver</a>
-                        于2016-02-20自豪地唠嗑
-                    </p>
-                </div>
-            </article>
-            
-            <article class="post">
-                <div class="jumbotron">
-                    <h1><a href="/2016/02/19/Try-some-interesting-stuff/" title="开启博客之旅">开启博客之旅</a></h1>
-
-                    
-                        <p>enjoy the process      
-弄这个博客也就花了两个晚上，折腾折腾时间过得很快，现在就差markdown的语法没有熟稔了。配置还算是很简单的，以后打算换成ghost搞搞，或者迁移到阿里云上提高访问速度，github pages还是有些限制的。         
-</p>
-                    
-
-                    <p class="say-title">
-                        —— <img src="/images/avatar.gif" class="img-circle index-post-avatar" />
-                        <a href="http://shengyu.me" target="_blank" title="Oliver">Oliver</a>
-                        于2016-02-19自豪地以 <a class="article-tag-link" href="/tags/hexo/">hexo</a> 唠嗑
-                    </p>
-                </div>
-            </article>
-            
             
             
         </div>
     </div>
+        
+    <div class="col-xs-19 all-list-box">
+    </div>
 </div>
-
-<script>
-$(function() {
-    $(".archive-list-count").addClass("badge");
-});
-</script>
-
     <footer id="footer">
         <small>该博客由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动，搭载 <a href="https://github.com/XadillaX/hexadillax" target="_blank">Hexadillax</a> 主题</small><br />
         <small>&copy; 2016 Oliver</small>
