@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Category: 日记 | oliver&#39;s leisure times</title>
+    <title>Archives: 2016/4 | oliver&#39;s leisure times</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -81,7 +81,7 @@
         
     $(function() {
         // page-id...
-        var pageId = "categories/日记/index.html";
+        var pageId = "archives/2016/04/index.html";
         pageId = pageId.substr(0, pageId.indexOf("/"));
         if(pageId === "") pageId = "index";
         
@@ -90,18 +90,15 @@
     </script>
 
     
+
 <div class="container archive-body">
     <div class="row">
-        <div class="col-xs-3 well">
-            <div class="archive-title" >
-                <h2 class="tag-icon">日记</h2>
-                <div>
-                    <a href="/categories"><< 返回标签列表</a> 
-                </div>
-            </div>
+        <div class="col-xs-2 well">
+            <h2 class="archive-icon">2016/4</h2>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">3</span></li></ul>
         </div>
         
-        <div class="col-xs-9" id="category-list-body">
+        <div class="col-xs-10">
             
             <article class="post">
                 <div class="jumbotron">
@@ -119,30 +116,18 @@
                 </div>
             </article>
             
-            <article class="post">
-                <div class="jumbotron">
-                    <h1><a href="/2016/02/20/同学聚会/" title="同学聚会">同学聚会</a></h1>
-
-                    
-                        <p>周五晚上抵沪，同学租住在汤臣二期，刚好有空房间，我便蹭住两晚。想起10年10月底初次来上海，扛着一袋被子和一大箱子衣物，坐地铁到北新泾，表哥来接我，张江德国中心，那是我人生第一份工作。而后12年7月底从浦东机场启程赴美，人生第一次坐飞机.今天又回到了这里，感觉人生就像是一个个循环</p>
-                    
-
-                    <p class="say-title">
-                        —— <img src="/images/avatar.gif" class="img-circle index-post-avatar" />
-                        <a href="http://shengyu.me" target="_blank" title="Oliver">Oliver</a>
-                        于2016-02-20自豪地唠嗑
-                    </p>
-                </div>
-            </article>
-            
             
             
         </div>
     </div>
-        
-    <div class="col-xs-19 all-list-box">
-    </div>
 </div>
+
+<script>
+$(function() {
+    $(".archive-list-count").addClass("badge");
+});
+</script>
+
     <footer id="footer">
         <small>该博客由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动，搭载 <a href="https://github.com/XadillaX/hexadillax" target="_blank">Hexadillax</a> 主题</small><br />
         <small>&copy; 2016 Oliver</small>
